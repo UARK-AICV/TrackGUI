@@ -1,0 +1,13 @@
+--- Installation
+conda create --name=trackGUI python=3.8
+conda activate trackGUI
+pip install -e .
+--- Run the program and input this into the terminal. This program can only run in this "labelme" conda environment.
+conda activate trackGUI
+labelme
+
+Note:
+All frames must have labeled boxes
++ Track from scratch: track from the first frame to the end frame with automatic ID assignment
++ Track from Current Frame w/ Annotation: track from the current (being opened) frame with the modified ID or manual ID assignment
++ Track from Current Frame w/0 Annotation: track from the current (being opened) frame with automatic ID assignment
