@@ -11,7 +11,7 @@ This tool is built to integrate tracking visualization and annotation capabiliti
 Please feel free to use if your project/work includes visualization of multi-object tracking and editting of object information. <br>
 TrackMe annotation format is compatible with LabelMe annotation format (.json) without conversion.
 
-<img src="examples/trackgui/TrackMe_overview.png" width="40%"/> <br>
+<img src="examples/trackgui/TrackMe_overview.png" width="100%"/> <br>
 <i>TrackMe saves and displays the tracking information of multiple objects on the right. It generates unique colors for different combinations of object label and ID  </i>
 
 ## Features
