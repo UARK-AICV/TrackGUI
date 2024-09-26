@@ -1887,11 +1887,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 points = [
                     [shape['points'][0][0] + deltas[0][0] ,shape['points'][0][1] + deltas[0][1]], 
                     [shape['points'][1][0] + deltas[1][0] ,shape['points'][1][1] + deltas[1][1]]
-                ] 
-                # self.ir_mod_shape
-                # self.ir_old_shape
-                # load_shape 
-                # import ipdb ;ipdb.set_trace()
+                ]
 
             shape = Shape(
                 label=label,
@@ -2261,7 +2257,6 @@ class MainWindow(QtWidgets.QMainWindow):
             return False
         self.image = image                                  # image data
         self.filename = filename
-        
         if self._config["keep_prev"]:
             prev_shapes = self.canvas.shapes
         self.canvas.loadPixmap(QtGui.QPixmap.fromImage(image))
@@ -2273,6 +2268,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.loadFlags(flags)
         if self._config["keep_prev"] and self.noShapes():       # check noShapes() /// Shapes are annotations
             self.loadShapes(prev_shapes, replace=False)         # load annotation from prev image
+            self.setDirty()
+        elif self.ir_activated == True:
             self.setDirty()
         else:
             self.setClean()
@@ -2462,6 +2459,8 @@ class MainWindow(QtWidgets.QMainWindow):
                     self.ir_old_shape = "None"
                     self.ir_mod_shape = "None"
                 self.ir_activated = True
+            else:
+                self.ir_activated = False
 
             filename = None
             if self.filename is None:
