@@ -41,11 +41,12 @@ All frames must have labeled boxes
 ## Citation
 If you find our work helpful, please consider citing our paper:
 ```
-@misc{phan2024trackmeasimpleeffectivemultiple,
-      title={TrackMe:A Simple and Effective Multiple Object Tracking Annotation Tool}, 
-      author={Thinh Phan and Isaac Phillips and Andrew Lockett and Michael T. Kidd and Ngan Le},
-      year={2024},
-      eprint={2410.15518},
+@article{phan2024trackme,
+  title={TrackMe: A Simple and Effective Multiple Object Tracking Annotation Tool},
+  author={Phan, Thinh and Phillips, Isaac and Lockett, Andrew and Kidd, Michael T and Le, Ngan},
+  journal={arXiv preprint arXiv:2410.15518},
+  year={2024}
+}
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2410.15518}, 
