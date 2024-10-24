@@ -47,8 +47,4 @@ If you find our work helpful, please consider citing our paper:
   journal={arXiv preprint arXiv:2410.15518},
   year={2024}
 }
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.15518}, 
-}
 ```
