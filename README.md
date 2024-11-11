@@ -38,3 +38,13 @@ All frames must have labeled boxes
 + Track from Current Frame w/ Annotation: track from the current (being opened) frame with the modified ID or manual ID assignment
 + Track from Current Frame w/0 Annotation: track from the current (being opened) frame with automatic ID assignment
 
+## Citation
+If you find our work helpful, please consider citing our paper:
+```
+@article{phan2024trackme,
+  title={TrackMe: A Simple and Effective Multiple Object Tracking Annotation Tool},
+  author={Phan, Thinh and Phillips, Isaac and Lockett, Andrew and Kidd, Michael T and Le, Ngan},
+  journal={arXiv preprint arXiv:2410.15518},
+  year={2024}
+}
+```
